@@ -1,38 +1,4 @@
 # Python_String_Method_review
 This code focuses on using .split(), .strip() and .format()
 
-highlighted_poems = "Afterimages:Audre Lorde:1997,  The Shadow:William Carlos Williams:1915, Ecstasy:Gabriela Mistral:1925,   Georgia Dusk:Jean Toomer:1923,   Parting Before Daybreak:An Qi:2014, The Untold Want:Walt Whitman:1871, Mr. Grumpledump's Song:Shel Silverstein:2004, Angel Sound Mexico City:Carmen Boullosa:2013, In Love:Kamala Suraiyya:1965, Dream Variations:Langston Hughes:1994, Dreamwood:Adrienne Rich:1987"
-
-# print(highlighted_poems)
-# print('\n')
-
-highlighted_poems_list = highlighted_poems.split(',')
-
-# print(highlighted_poems_list)
-# print('\n')
-highlighted_poems_stripped = []
-
-for poem in highlighted_poems_list:
-  highlighted_poems_stripped.append(poem.strip())
-  
-# print(highlighted_poems_stripped)
-# print('\n')
-highlighted_poems_details = []
-
-for poem in highlighted_poems_stripped:
-  highlighted_poems_details.append(poem.split(':'))
-  
-titles = []
-poets = []
-dates = []
-
-for poem in highlighted_poems_details:
-  titles.append(poem[0])
-  poets.append(poem[1])
-  dates.append(poem[2])
-  
-range_check = range(0,len(highlighted_poems_details))  
-for i in range_check:
-    print('The poem {} was published by {} in {}'.format(titles[i], poets[i], dates[i]))
-
-    
+Preserve the Verse has one final task for you. They have delivered you a string that contains a list of poems, titled highlighted_poems, they want to highlight on the site, but they need your help to parse the string into something that can display the name, title, and publication date of the highlighted poems on the site.
